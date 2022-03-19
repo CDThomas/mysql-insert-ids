@@ -1,0 +1,12 @@
+[package]
+name = "mysql-insert-ids"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures = "0.3"
+sqlx = { version = "0.5", features = [ "runtime-tokio-rustls", "mysql" ] }
+tokio = { version = "1", features = ["full"] }
+uuid = { version = "0.8", features = ["v4"] }
